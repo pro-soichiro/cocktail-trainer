@@ -190,4 +190,46 @@ th {
   .layout {
     padding: 0 6vw 3rem;
   }
+
+  .panel {
+    margin: 0 1.25vw;
+  }
+
+  .table-wrap table,
+  .table-wrap thead,
+  .table-wrap tbody,
+  .table-wrap tr,
+  .table-wrap th,
+  .table-wrap td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-wrap thead {
+    display: none;
+  }
+
+  .table-wrap tr {
+    background: #fff;
+    border-radius: 16px;
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 0.9rem;
+    box-shadow: 0 8px 18px rgba(26, 23, 21, 0.08);
+  }
+
+  .table-wrap td {
+    border: none;
+    padding: 0.4rem 0;
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .table-wrap td::before {
+    content: attr(data-label);
+    min-width: 5.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
 }

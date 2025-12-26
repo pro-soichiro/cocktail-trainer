@@ -38,13 +38,13 @@ function renderTable(rows) {
       ? row.ingredients.join(" / ")
       : row.ingredients || "";
     tr.innerHTML = `
-      <td>${row.name}</td>
-      <td>${row.base}</td>
-      <td>${row.method}</td>
-      <td>${row.glass}</td>
-      <td>${row.ice}</td>
-      <td>${ingredients}</td>
-      <td>${row.note}</td>
+      <td data-label="カクテル名">${row.name}</td>
+      <td data-label="ベース">${row.base}</td>
+      <td data-label="技法">${row.method}</td>
+      <td data-label="グラス">${row.glass}</td>
+      <td data-label="氷">${row.ice}</td>
+      <td data-label="材料">${ingredients}</td>
+      <td data-label="備考">${row.note}</td>
     `;
     recipeBody.appendChild(tr);
   });
