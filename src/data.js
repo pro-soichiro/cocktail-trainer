@@ -1,4 +1,4 @@
-window.RECIPES = [
+export const recipes = [
   {
     "name": "アイリッシュコーヒー",
     "glass": "ホットワイン",

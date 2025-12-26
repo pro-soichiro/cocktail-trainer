@@ -1,73 +1,12 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocktail Trainer</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Beginner Bartender Toolkit</p>
-        <h1>Cocktail Trainer</h1>
-      </div>
-    </header>
-
-    <main class="layout">
-      <section class="panel filters">
-        <h2>Filters</h2>
-        <div class="filter-grid">
-          <label>
-            <span>検索</span>
-            <input id="searchInput" type="search" placeholder="カクテル名・材料・備考" />
-          </label>
-          <label>
-            <span>ベース</span>
-            <select id="baseFilter"></select>
-          </label>
-          <label>
-            <span>技法</span>
-            <select id="methodFilter"></select>
-          </label>
-          <label>
-            <span>グラス</span>
-            <select id="glassFilter"></select>
-          </label>
-          <label>
-            <span>氷</span>
-            <select id="iceFilter"></select>
-          </label>
-        </div>
-      </section>
-
-      <section class="panel table">
-        <div class="table-head">
-          <h2>Recipes</h2>
-          <span id="resultCount" class="muted"></span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>カクテル名</th>
-                <th>ベース</th>
-                <th>技法</th>
-                <th>グラス</th>
-                <th>氷</th>
-                <th>材料</th>
-                <th>備考</th>
-              </tr>
-            </thead>
-            <tbody id="recipeBody"></tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
